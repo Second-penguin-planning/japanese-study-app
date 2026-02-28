@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japanese Study Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Japanese Study Planner</h1>
+<p>Please answer the questions below.</p>
+
+<form id="surveyForm">
+
+<label>Current Japanese Level</label>
+<select id="currentLevel">
+<option value="N5">N5 (Beginner)</option>
+<option value="N4">N4</option>
+<option value="N3">N3</option>
+<option value="N2">N2</option>
+<option value="N1">N1</option>
+</select>
+
+<label>Target Japanese Level</label>
+<select id="targetLevel">
+<option value="N5">N5</option>
+<option value="N4">N4</option>
+<option value="N3">N3</option>
+<option value="N2">N2</option>
+<option value="N1">N1</option>
+</select>
+
+<label>Time to Reach Goal</label>
+<select id="period">
+<option value="3">3 Months</option>
+<option value="6">6 Months</option>
+<option value="12">12 Months</option>
+</select>
+
+<label>Study Days per Week</label>
+<input type="number" id="weeklyDays" min="1" max="7">
+
+<label>Average Study Time per Day (minutes)</label>
+<input type="number" id="dailyTime">
+
+<label>Strong Area</label>
+<select id="strength">
+<option value="grammar">Grammar</option>
+<option value="conversation">Conversation</option>
+<option value="pronunciation">Pronunciation</option>
+<option value="kanji">Kanji</option>
+</select>
+
+<label>Motivation Level</label>
+<select id="motivation">
+<option value="high">Urgent / High</option>
+<option value="normal">Normal</option>
+<option value="low">Low</option>
+</select>
+
+<button type="submit">Get My Study Plan</button>
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
